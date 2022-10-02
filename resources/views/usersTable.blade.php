@@ -86,13 +86,11 @@
                     </tr>
                 </tbody>
                 @foreach ($users as $user )
-                <tr>
-                    <td><img src="{{$user->avatar_url}}" alt="foto" width="100px" height="100px"></td>
-                    <td><p>{{$user->login}}</p></td>
-                    <td><button class="btn btn-primary" onclick="redirect('{{$user->login}}')">Ver informacion</button></td>
-                </tr>
-                
-                    
+                    <tr>
+                        <td><img src="{{$user->avatar_url}}" alt="foto" width="100px" height="100px"></td>
+                        <td><p>{{$user->login}}</p></td>
+                        <td><button class="btn btn-primary" onclick="redirect('{{$user->login}}')">Ver informacion</button></td>
+                    </tr>                 
                 @endforeach
             </table> 
 
